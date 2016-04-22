@@ -1,0 +1,43 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* MODAL CLASSES */
+
+.modal-container {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-container.active {
+  display: block;
+  position:fixed;
+}
+
+.modal-container .modal-content {
+  margin: 0 auto;
+  height: 400px;
+  max-width: 400px;
+  width: 100%;
+  color: black;
+  background-color: white;
+  padding: 16px;
+}
+
+.modal-container .modal-content .modal-close-btn {
+display: inline-block;
+float: right;
+}
+
+.vertical-center-position {
+    /* helper methoid to vertically align the center modal content */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
